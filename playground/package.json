@@ -7,7 +7,8 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@trackpoint-sdk/core": "workspace:*"
+    "@trackpoint-sdk/core": "workspace:*",
+    "@trackpoint-sdk/plugin-pageview": "workspace:*"
   },
   "devDependencies": {
     "vite": "^5.0.0"

@@ -35,11 +35,20 @@ importers:
 
   packages/core: {}
 
+  packages/plugins/pageview:
+    dependencies:
+      '@trackpoint-sdk/core':
+        specifier: workspace:*
+        version: link:../../core
+
   playground:
     dependencies:
       '@trackpoint-sdk/core':
         specifier: workspace:*
         version: link:../packages/core
+      '@trackpoint-sdk/plugin-pageview':
+        specifier: workspace:*
+        version: link:../packages/plugins/pageview
     devDependencies:
       vite:
         specifier: ^5.0.0

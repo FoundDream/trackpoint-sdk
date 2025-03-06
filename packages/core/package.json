@@ -9,8 +9,8 @@
     "dist"
   ],
   "scripts": {
-    "dev": "rollup -c -w",
-    "build": "rollup -c",
+    "dev": "tsc -w",
+    "build": "tsc",
     "clean": "rimraf dist"
   },
   "publishConfig": {

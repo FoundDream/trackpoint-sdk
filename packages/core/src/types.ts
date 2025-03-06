@@ -10,5 +10,10 @@ export interface TrackEvent {
 
 export interface Plugin {
   name: string;
-  init?: (tracker: any) => void;
+  install: (tracker: any) => void;
+}
+
+export interface TrackerInstance {
+  use: (plugin: Plugin) => TrackerInstance;
+  track: (event: TrackEvent) => void;
 }
