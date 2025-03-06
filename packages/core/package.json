@@ -1,0 +1,20 @@
+{
+  "name": "@trackpoint-sdk/core",
+  "version": "1.0.0",
+  "description": "Core package for tracking SDK",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "rollup -c -w",
+    "build": "rollup -c",
+    "clean": "rimraf dist"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module"
+}
