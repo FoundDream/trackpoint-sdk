@@ -12,10 +12,8 @@ export class PageViewPlugin implements Plugin {
   version = "1.0.0";
 
   install(tracker: TrackerInstance): void {
-    console.log("PageViewPlugin installed");
-
     tracker.track({
-      type: "page_view",
+      type: "PV",
       data: {
         page: "ss",
         title: "ss",

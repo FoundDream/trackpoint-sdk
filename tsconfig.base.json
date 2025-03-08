@@ -11,6 +11,7 @@
     "baseUrl": ".",
     "paths": {
       "@tracking-sdk/*": ["packages/*/src"]
-    }
+    },
+    "importHelpers": true
   }
 }

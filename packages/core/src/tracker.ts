@@ -1,4 +1,5 @@
 import { TrackerConfig, Plugin, TrackEvent } from "./types";
+import Logger from "./utils/Logger";
 
 export class Tracker {
   private readonly config: TrackerConfig;
@@ -32,7 +33,7 @@ export class Tracker {
     };
 
     if (this.config.debug) {
-      console.log("[Tracker]", fullEvent);
+      Logger.info("Track", fullEvent);
     }
   }
 }

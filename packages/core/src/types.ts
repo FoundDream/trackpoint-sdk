@@ -2,8 +2,10 @@ export interface TrackerConfig {
   debug?: boolean;
 }
 
+export type TrackType = "MC" | "PV";
+
 export interface TrackEvent {
-  type: string;
+  type: TrackType;
   data: Record<string, any>;
   timestamp?: number;
 }

@@ -2,6 +2,7 @@
   "name": "@trackpoint-sdk/core",
   "version": "1.0.0",
   "description": "Core package for tracking SDK",
+  "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -15,6 +16,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "type": "module"
+  }
 }

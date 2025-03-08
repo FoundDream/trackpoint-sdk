@@ -2,15 +2,18 @@
   "name": "@trackpoint-sdk/playground",
   "private": true,
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@trackpoint-sdk/core": "workspace:*",
     "@trackpoint-sdk/plugin-pageview": "workspace:*"
   },
   "devDependencies": {
-    "vite": "^5.0.0"
+    "vite": "^5.0.0",
+    "typescript": "^5.0.0"
   }
 }
