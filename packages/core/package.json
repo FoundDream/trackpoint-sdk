@@ -3,16 +3,18 @@
   "version": "1.0.0",
   "description": "Core package for tracking SDK",
   "type": "module",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "files": [
     "dist"
   ],
   "scripts": {
-    "dev": "rollup -c -w",
-    "build": "rollup -c",
-    "clean": "rimraf dist"
+    "build": "tsc",
+    "dev": "tsc --watch"
   },
   "publishConfig": {
     "access": "public"

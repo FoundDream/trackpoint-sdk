@@ -1,10 +1,11 @@
 {
-  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "outDir": "./dist",
-    "rootDir": "./src"
+    "rootDir": "./src",
+    "declaration": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",  // 使用 Bundler 模式更简单
+    "target": "ES2020"
   },
-  "include": ["src"],
-  "references": [{ "path": "../core" }],
-  "composite": true
+  "include": ["src"]
 }

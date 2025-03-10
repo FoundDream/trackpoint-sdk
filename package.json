@@ -4,20 +4,12 @@
   "description": "",
   "private": true,
   "scripts": {
-    "dev": "pnpm build && pnpm dev:watch",
-    "dev:watch": "pnpm --parallel -r dev",
-    "build": "pnpm -r build",
-    "clean": "pnpm -r exec rimraf dist",
-    "test": "pnpm -r test",
-    "playground": "pnpm build && pnpm --filter @trackpoint-sdk/playground dev"
+    "dev": "pnpm -r --parallel run dev"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^22.13.9",
-    "rimraf": "^6.0.1",
-    "tslib": "^2.8.1",
     "typescript": "^5.8.2"
   }
 }

@@ -1,5 +1,5 @@
 import { createTracker } from "@trackpoint-sdk/core";
-// import { PageViewPlugin } from "@trackpoint-sdk/plugin-pageview";
+import { PageViewPlugin } from "@trackpoint-sdk/plugin-pageview";
 
 // 创建 Tracker 实例
 const tracker = createTracker({
@@ -7,7 +7,7 @@ const tracker = createTracker({
 });
 
 // 使用 PageView 插件
-// tracker.use(new PageViewPlugin());
+tracker.use(new PageViewPlugin());
 
 document.getElementById("test-btn")?.addEventListener("click", () => {
   tracker.track({

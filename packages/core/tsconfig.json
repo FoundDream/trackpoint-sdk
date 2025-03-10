@@ -1,20 +1,12 @@
 {
-  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "target": "ES2018",
-    "module": "ESNext",
-    "lib": ["DOM", "ESNext"],
-    "declaration": true,
-    "declarationDir": "./dist",
-    "sourceMap": true,
-    "outDir": "dist",
-    "strict": true,
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "composite": true,
-    "rootDir": "./src"
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "declaration": true,     // 生成 .d.ts
+    "module": "ESNext",      // 使用 ES 模块
+    "target": "ES2020",      // 目标 JS 版本
+    "moduleResolution": "Bundler"
   },
-  "include": ["src/**/*.ts"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["src"],
+  "composite": true
 }
